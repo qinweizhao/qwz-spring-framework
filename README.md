@@ -2,9 +2,11 @@
 
 ## 一、GitHub 下载源码
 
-访问 Spring 官方源码地址 https://github.com/spring-projects/spring-framework.git 。
+源码地址： https://github.com/spring-projects/spring-framework.git 。
 
 ## 二、下载 Gradle（可选）
+
+参考：https://www.qinweizhao.com/?p=25 。
 
 ## 三、导入 IntelliJ IDEA
 
