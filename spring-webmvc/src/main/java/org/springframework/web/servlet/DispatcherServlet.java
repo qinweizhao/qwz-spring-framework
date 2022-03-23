@@ -1025,6 +1025,12 @@ public class DispatcherServlet extends FrameworkServlet {
 	 * to find the first that supports the handler class.
 	 * <p>All HTTP methods are handled by this method. It's up to HandlerAdapters or handlers
 	 * themselves to decide which methods are acceptable.
+	 *
+	 * 处理对处理程序的实际调度。
+	 * 将通过依次应用 servlet 的 HandlerMappings 来获取处理程序。
+	 * HandlerAdapter 将通过查询 servlet 已安装的 HandlerAdapter 来找到第一个支持该处理程序类的。
+	 * 所有 HTTP 方法都由该方法处理。由 HandlerAdapters 或处理程序自己决定哪些方法是可接受的。
+	 *
 	 * @param request current HTTP request
 	 * @param response current HTTP response
 	 * @throws Exception in case of any kind of processing failure
