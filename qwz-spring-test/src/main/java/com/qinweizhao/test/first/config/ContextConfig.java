@@ -1,4 +1,4 @@
-package com.qinweizhao.test.config;
+package com.qinweizhao.test.first.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

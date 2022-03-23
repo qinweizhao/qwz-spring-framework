@@ -6,12 +6,32 @@ group 'com.qinweizhao'
 version '5.3.17-SNAPSHOT'
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
-    implementation(project(":spring-context"))
-    implementation(project(":spring-instrument"))
+    implementation (project(":spring-context"))
+    implementation (project(":spring-instrument"))
+
+    implementation (project(":spring-web"))
+    implementation (project(":spring-webmvc"))
+
+    implementation (project(":spring-beans"))
+    implementation (project(":spring-oxm"))
+    implementation (project(":spring-aspects"))
+    implementation (project(":spring-core"))
+    implementation (project(":spring-aop"))
+    implementation (project(":spring-jcl"))
+    implementation (project(":spring-jcl"))
+    implementation (project(":spring-expression"))
+
+    implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-core', version: '8.5.32'
+    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
+
+    compileOnly 'org.projectlombok:lombok:1.18.6'
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'
+
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 }

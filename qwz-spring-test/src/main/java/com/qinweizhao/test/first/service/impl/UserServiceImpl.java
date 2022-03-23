@@ -1,6 +1,6 @@
-package com.qinweizhao.test.service.impl;
+package com.qinweizhao.test.first.service.impl;
 
-import com.qinweizhao.test.service.IUserService;
+import com.qinweizhao.test.first.service.IUserService;
 import org.springframework.stereotype.Service;
 
 /**

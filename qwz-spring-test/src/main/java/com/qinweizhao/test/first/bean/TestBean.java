@@ -1,4 +1,4 @@
-package com.qinweizhao.test.bean;
+package com.qinweizhao.test.first.bean;
 
 import org.springframework.stereotype.Component;
 

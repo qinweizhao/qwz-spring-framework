@@ -1,4 +1,4 @@
-package com.qinweizhao.test.service;
+package com.qinweizhao.test.first.service;
 
 /**
  * @author qinweizhao

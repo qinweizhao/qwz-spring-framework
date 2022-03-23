@@ -21,7 +21,7 @@ gradlew :spring-oxm:compileTestJava
 创建 qwz-spring-test 模块
 
 ```java
-package com.qinweizhao.test.bean;
+package com.qinweizhao.test.first.bean;
 
 import org.springframework.stereotype.Component;
 
@@ -32,15 +32,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class TestBean {
 
-	public void test(){
-		System.out.println("test 方法执行。。。");
-	}
+    public void test() {
+        System.out.println("test 方法执行。。。");
+    }
 }
 
 ```
 
 ```java
-package com.qinweizhao.test.config;
+package com.qinweizhao.test.first.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -59,8 +59,8 @@ public class ContextConfig {
 ```java
 package com.qinweizhao.test;
 
-import com.qinweizhao.test.bean.TestBean;
-import com.qinweizhao.test.config.ContextConfig;
+import com.qinweizhao.test.first.bean.TestBean;
+import com.qinweizhao.test.first.config.ContextConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
@@ -69,12 +69,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class TestMain {
 
-	public static void main(String[] args) {
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ContextConfig.class);
-		TestBean testBean = (TestBean) context.getBean("testBean");
-		testBean.test();
+    public static void main(String[] args) {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ContextConfig.class);
+        TestBean testBean = (TestBean) context.getBean("testBean");
+        testBean.test();
 
-	}
+    }
 }
 ```
 

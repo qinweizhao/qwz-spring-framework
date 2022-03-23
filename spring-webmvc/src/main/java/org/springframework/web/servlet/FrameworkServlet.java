@@ -812,6 +812,10 @@ public abstract class FrameworkServlet extends HttpServletBean implements Applic
 	 * the WebApplicationContext has been loaded. The default implementation is empty;
 	 * subclasses may override this method to perform any initialization they require.
 	 * @throws ServletException in case of an initialization exception
+	 *
+	 * 在设置任何 bean 属性并加载 WebApplicationContext 后，将调用此方法。
+	 * 默认实现为空；子类可以重写此方法以执行它们所需的任何初始化。
+	 * @throws ServletException 在初始化异常的情况下
 	 */
 	protected void initFrameworkServlet() throws ServletException {
 	}
